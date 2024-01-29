@@ -1,0 +1,233 @@
+/*Partial Utilities*/
+/*Partial base*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 200px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px black;
+  font-size: 1.875rem;
+  margin-bottom: 0px;
+  text-align: center; }
+
+h2 {
+  color: #ffffff;
+  font-size: 1.875rem;
+  margin-bottom: .9375rem;
+  margin-top: 2.1875rem;
+  text-align: center; }
+
+p {
+  text-align: justify;
+  padding: 10px;
+  color: #ffffff; }
+
+/*Partial Layout*/
+/* Banner */
+.banner {
+  width: auto;
+  height: 400px;
+  background-image: url("../assets/portada.jpg");
+  background-size: cover;
+  background-position: center; }
+  .banner p {
+    text-align: center;
+    font-weight: 650;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    align-content: center; }
+
+/* Navbar*/
+.nav-link:hover .element-footer {
+  text-decoration: underline;
+  color: #d00340; }
+
+.footer {
+  background-color: black; }
+  .footer .wrap-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 12.5rem);
+    justify-content: space-evenly;
+    margin: 10px;
+    column-gap: 5px;
+    row-gap: 5px; }
+    .footer .wrap-footer ul {
+      padding: 0%; }
+      .footer .wrap-footer ul li {
+        list-style: none; }
+        .footer .wrap-footer ul li .element-footer h5 {
+          margin: 1rem 0; }
+          .footer .wrap-footer ul li .element-footer h5 .text-element-footer li {
+            line-height: 2; }
+            .footer .wrap-footer ul li .element-footer h5 .text-element-footer li a {
+              color: #d00340; }
+
+.rrss-element-footer ul {
+  display: flex;
+  flex-wrap: wrap; }
+  .rrss-element-footer ul img {
+    width: 35px; }
+    .rrss-element-footer ul img li {
+      margin-right: 1rem; }
+
+/*Index*/
+.contenedor-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 12.5rem);
+  justify-content: center;
+  margin: 10px;
+  column-gap: 15px;
+  row-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin: 15px; }
+  .contenedor-2 .carrusel {
+    justify-content: center;
+    align-self: center; }
+
+/*sobre el festival*/
+.contenedor-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 15px; }
+
+/*Historia*/
+.contenedor-historia {
+  margin: 15px; }
+
+/*Artistas*/
+.contenedor-artistas {
+  margin: 15px; }
+
+.Contenedor-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 12.5rem);
+  padding: 30px; }
+  .Contenedor-cards .cards {
+    width: auto;
+    height: 250;
+    background-color: white;
+    border: 3px solid #d00340;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px rgba(141, 0, 242, 0.2);
+    margin: 3px; }
+    .Contenedor-cards .cards:hover {
+      box-shadow: 0px 0px 30px 1px #d00340;
+      transform: scale(0.98);
+      border-radius: 8px; }
+    .Contenedor-cards .cards .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: flex-end;
+      margin: 30px; }
+  .Contenedor-cards .card-text {
+    text-align: justify;
+    color: black;
+    font-size: small; }
+    .Contenedor-cards .card-text .card-title {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      color: black;
+      margin-top: 15px;
+      margin-bottom: 100px; }
+      .Contenedor-cards .card-text .card-title .card-img-top {
+        width: 100%;
+        height: 30%;
+        border-radius: 8px; }
+
+/*Ubicacion*/
+.mapa {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  background-color: cyan;
+  margin: 15px; }
+
+/*Index-fotos*/
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 12.5rem);
+  justify-content: center;
+  margin: 10px;
+  column-gap: 15px;
+  row-gap: 15px; }
+  .fotos .card {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(163deg, #d00340 0%, #d00340d2 100%);
+    border-radius: 20px;
+    transition: all .3s; }
+    .fotos .card:hover {
+      box-shadow: 0px 0px 30px 1px #d00340; }
+  .fotos .card2 {
+    width: 200px;
+    height: 200px;
+    background-color: #d00340;
+    border-radius: 50px;
+    transition: all .3s; }
+    .fotos .card2:hover {
+      transform: scale(0.98);
+      border-radius: 50px; }
+    .fotos .card2 img {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      transition: all .3s; }
+
+/***********************/
+/*Festival*/
+.festival {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap;
+  gap: 20px; }
+  .festival .foto {
+    width: 15.625rem;
+    height: 250px;
+    border-radius: 20%;
+    margin: 5px; }
+  .festival img {
+    --s: 250px;
+    --b: 5px;
+    --g: 14px;
+    --c: $color-hove ;
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #00000098;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+    margin: 15px; }
+    .festival img:hover {
+      outline: var(--b) solid var(--c);
+      outline-offset: var(--g); }
+  .festival img + img {
+    width: 15.625rem;
+    height: 250px;
+    border-radius: 20%;
+    margin: 5px; }
+  .festival body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 30px;
+    place-content: center;
+    place-items: center;
+    background: #fefe00; }
