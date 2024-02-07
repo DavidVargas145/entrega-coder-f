@@ -55,7 +55,7 @@ p {
   color: #d00340; }
 
 .footer {
-  background-color: black; }
+  background-image: linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000, #18090d, #260f16, #35121c, #591529, #7f1433, #a70f3b, #d00340); }
   .footer .wrap-footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, 12.5rem);
@@ -81,6 +81,18 @@ p {
     width: 35px; }
     .rrss-element-footer ul img li {
       margin-right: 1rem; }
+
+.link-elements-footer ul :hover {
+  text-decoration: underline;
+  color: #d00340; }
+
+.footer-creds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .footer-creds .legal-creds {
+    align-self: flex-start; }
 
 /*Index*/
 .contenedor-2 {
