@@ -1,17 +1,18 @@
-@mixin grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 12.5rem);
-    justify-content: center;
-    margin: 10px;
-    column-gap: 15px;
-    row-gap: 15px;
-}
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
 
-@mixin img {
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    transition: all .3s;
-}
+    @mixin grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 12.5rem);
+        justify-content: center;
+    }
 
-
+    @mixin img {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        transition: all .3s;
+    }

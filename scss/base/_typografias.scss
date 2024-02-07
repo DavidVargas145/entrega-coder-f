@@ -1,1 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+h1 {
+    color: $color-blanco ;
+    text-align: center;
+    padding-top: 200px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-size: 1.875rem;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+h2 {
+    color: $color-blanco;
+    font-size: 1.875rem;
+    margin-bottom: .9375rem;
+    margin-top: 2.1875rem;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+    color: $color-blanco;
+}

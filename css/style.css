@@ -7,7 +7,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: black;
+  background-color: #000;
   color: #ffffff;
   font-family: 'Roboto', sans-serif; }
 
@@ -95,19 +95,28 @@ p {
     align-self: flex-start; }
 
 /*Index*/
-.contenedor-2 {
+.fotos {
   display: grid;
   grid-template-columns: repeat(auto-fit, 12.5rem);
   justify-content: center;
   margin: 10px;
   column-gap: 15px;
   row-gap: 15px;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
-  margin: 15px; }
+  padding: 30px; }
+
+.contenedor-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-flow: nowrap; }
   .contenedor-2 .carrusel {
-    justify-content: center;
-    align-self: center; }
+    height: auto;
+    width: 1000%;
+    display: flex;
+    align-self: flex-start; }
 
 /*sobre el festival*/
 .contenedor-4 {
@@ -117,7 +126,16 @@ p {
 
 /*Historia*/
 .contenedor-historia {
-  margin: 15px; }
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center; }
+  .contenedor-historia .carrusel-historia {
+    width: 600px; }
 
 /*Artistas*/
 .contenedor-artistas {
@@ -126,41 +144,47 @@ p {
 .Contenedor-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, 12.5rem);
+  justify-content: center;
   padding: 30px; }
-  .Contenedor-cards .cards {
+  .Contenedor-cards .cards .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: auto;
-    height: 250;
-    background-color: white;
-    border: 3px solid #d00340;
-    border-radius: 8px;
+    height: 28.125rem;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 5px solid #d00340;
+    border-radius: 10px;
     padding: 8px;
-    box-shadow: 0px 2px 4px rgba(141, 0, 242, 0.2);
-    margin: 3px; }
-    .Contenedor-cards .cards:hover {
-      box-shadow: 0px 0px 30px 1px #d00340;
-      transform: scale(0.98);
-      border-radius: 8px; }
-    .Contenedor-cards .cards .btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-self: flex-end;
-      margin: 30px; }
-  .Contenedor-cards .card-text {
-    text-align: justify;
-    color: black;
-    font-size: small; }
-    .Contenedor-cards .card-text .card-title {
+    margin: 5px;
+    align-items: center;
+    justify-content: center; }
+    .Contenedor-cards .cards .card-body .btn {
+      background-color: #d00340;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 10px;
+      align-content: center;
+      flex-flow: wrap; }
+    .Contenedor-cards .cards .card-body .card-title {
       text-align: center;
       text-transform: uppercase;
-      margin-bottom: 15px;
-      color: black;
-      margin-top: 15px;
-      margin-bottom: 100px; }
-      .Contenedor-cards .card-text .card-title .card-img-top {
-        width: 100%;
-        height: 30%;
-        border-radius: 8px; }
+      font-size: 15px;
+      padding: 5px;
+      color: #000; }
+  .Contenedor-cards .cards:hover {
+    box-shadow: 0px 0px 30px 1px #d00340;
+    transform: scale(0.98);
+    border-radius: 8px; }
+
+.card-text {
+  color: #000;
+  font-size: 10px; }
 
 /*Ubicacion*/
 .mapa {
@@ -174,10 +198,7 @@ p {
 .fotos {
   display: grid;
   grid-template-columns: repeat(auto-fit, 12.5rem);
-  justify-content: center;
-  margin: 10px;
-  column-gap: 15px;
-  row-gap: 15px; }
+  justify-content: center; }
   .fotos .card {
     width: 200px;
     height: 200px;
@@ -205,8 +226,10 @@ p {
 /*Festival*/
 .festival {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  flex-direction: row;
   flex-flow: wrap;
   gap: 20px; }
   .festival .foto {
@@ -242,4 +265,4 @@ p {
     gap: 30px;
     place-content: center;
     place-items: center;
-    background: #fefe00; }
+    background: #ffffff; }
